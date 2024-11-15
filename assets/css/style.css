@@ -584,6 +584,31 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.about .icon-box {
+  margin: 20px auto;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 28px;
@@ -726,6 +751,12 @@ section {
   text-align: center;
 }
 
+.clients .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .clients .section-title {
   font-weight: 700;
   font-size: 28px;
@@ -734,11 +765,11 @@ section {
 }
 
 .clients img {
-  /* max-width: 85%; */
   height: 150px;
   transition: all 0.4s ease-in-out;
-  display: inline-block;
   padding: 15px 0;
+  display: block;
+  margin: 0 auto;
 }
 
 .clients img:hover {
@@ -757,7 +788,12 @@ section {
 --------------------------------------------------------------*/
 .portfolio {
   margin-top: 30px;
-  margin-bottom: 50px;
+}
+
+.portfolio .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolio .section-title {
@@ -789,6 +825,7 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  margin-bottom: 50px;
 }
 
 .portfolio .card:hover {
@@ -833,6 +870,12 @@ section {
 #footer .footer-top {
   background: #1c1f22;
   padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .row {
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
 }
 
 #footer .footer-top .footer-info {
@@ -922,42 +965,8 @@ section {
   color: var(--primary);
 }
 
-#footer .footer-top .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px;
-}
-
-#footer .footer-top .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px;
-  width: calc(100% - 110px);
-}
-
-#footer .footer-top .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: -2px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px 2px 20px;
-  background: var(--primary);
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-}
-
-#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: var(--primary-black);
-}
-
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
 }
 
 #footer .credits {
