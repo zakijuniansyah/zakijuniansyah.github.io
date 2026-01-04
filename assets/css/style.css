@@ -179,6 +179,22 @@ h6 {
   background: #6e5134;
 }
 
+#about {
+  scroll-margin-top: 73px;
+}
+
+#interest {
+  scroll-margin-top: 50px;
+}
+
+#skill {
+  scroll-margin-top: 55px;
+}
+
+#portfolio {
+  scroll-margin-top: 30px;
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -602,7 +618,8 @@ section {
   margin: 0 auto;
   border-radius: 20px;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
+  height: 600px;
 }
 
 .about .icon-box {
